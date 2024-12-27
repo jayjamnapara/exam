@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        Transform an array of objects by extracting a specific property using map:
+        Input: [{name: "Alice"}, {name: "Bob"}, {name: "Charlie"}]
+        Output: ["Alice", "Bob", "Charlie"]
+    </p>
+</body>
+
+</html>
+<script>
+    let arr = [{name: "Alice"}, {name: "Bob"}, {name: "Charlie"}]
+    let arr1 = arr.map((el,i)=>{
+        return el.name
+    })
+    console.log(arr1)
+</script>

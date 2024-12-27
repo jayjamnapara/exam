@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Use reduce to find the largest number in an array:
+    Input: [3, 7, 2, 9, 4]
+    Output: 9
+    </p>
+</body>
+</html>
+<script>
+    let arr = [3, 7, 2, 9, 4]
+    let arr1 = arr.reduce((max,el)=>{
+        // return el > max ? el : max;
+        if(el>max){
+            return el
+        }
+        else{
+            return max
+        }
+    },arr[0])
+    console.log(arr1)
+</script>
